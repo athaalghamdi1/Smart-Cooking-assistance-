@@ -3,58 +3,63 @@
 
 prepared by: Atha Alghamdi- Aghadir Jammah
 
+T - Smart Cooking Assistant
 
-‏t هو تطبيق ويب تفاعلي يساعد المستخدمين في إنشاء وصفات طعام بناءً على المكونات التي يملكونها. يعتمد التطبيق على الذكاء الاصطناعي للتعرف على المكونات من الصور واقتراح وصفات مناسبة، مع إمكانية توليد صور للأطباق المقترحة.
+T is an interactive web application that helps users create food recipes based on the ingredients they have. The app utilizes AI to recognize ingredients from images and suggest suitable recipes, with the ability to generate images of the suggested dishes.
 
-المحتويات
+Contents
 
-	•	المقدمة
-	•	المتطلبات
-	•	التثبيت
-	•	الاستخدام
-	•	التقنيات المستخدمة
-	•	المساهمة
-	•	الترخيص
+	•	Introduction
+	•	Requirements
+	•	Installation
+	•	Usage
+	•	Technologies Used
+	•	Contribution
+	•	License
 
-المقدمة
+Introduction
 
-يقوم التطبيق بتحليل صورة المكونات باستخدام Roboflow، ثم يستخدم Gemini AI لتوليد وصفات بناءً على المكونات المكتشفة. بالإضافة إلى ذلك، يمكنه إنشاء صور للأطباق المقترحة باستخدام Hugging Face Inference API.
+The application analyzes an image of ingredients using Roboflow, then utilizes Gemini AI to generate recipes based on the detected ingredients. Additionally, it can create images of the suggested dishes using the Hugging Face Inference API.
 
-المتطلبات
+Requirements
 
-يجب تثبيت الأدوات والمكتبات التالية قبل تشغيل المشروع:
-‏	•	Python 3.8+
-	•	مكتبات Python المطلوبة:
+The following tools and libraries must be installed before running the project:
+	•	Python 3.8+
+	•	Required Python libraries:
 
-‏pip install streamlit opencv-python numpy roboflow google-generativeai huggingface_hub
+pip install streamlit opencv-python numpy roboflow google-generativeai huggingface_hub
 
 
-	•	مفتاح API لـ Roboflow
-	•	مفتاح API لـ Gemini AI
-	•	مفتاح API لـ Hugging Face Inference API
+	•	Roboflow API Key
+	•	Gemini AI API Key
+	•	Hugging Face Inference API Key
 
-التثبيت
+Installation
 
-اتبع الخطوات التالية لتثبيت وتشغيل المشروع محليًا:
+Follow these steps to install and run the project locally:
 
-‏git clone https://github.com/username/smart-cooking-assistant.git
-‏cd smart-cooking-assistant
-‏pip install -r requirements.txt
-‏streamlit run app.py
+git clone https://github.com/username/smart-cooking-assistant.git
+cd smart-cooking-assistant
+pip install -r requirements.txt
+streamlit run app.py
 
-الاستخدام
+Usage
 
-	1.	افتح التطبيق من خلال streamlit run app.py.
-	2.	اضغط على زر Start وسجّل الدخول باستخدام اسم المستخدم.
-	3.	قم برفع صورة تحتوي على مكونات الطعام لديك.
-	4.	سيقوم التطبيق بالتعرف على المكونات وعرض قائمة بها.
-	5.	اختر المكونات التي تريد استخدامها، ثم اضغط Make Recipes.
-	6.	انتظر حتى يتم إنشاء الوصفات وعرض صور الأطباق المقترحة.
+	1.	Open the app by running:
 
-التقنيات المستخدمة
+streamlit run app.py
 
-‏	•	Streamlit لإنشاء واجهة المستخدم التفاعلية.
-‏	•	OpenCV لمعالجة الصور.
-‏	•	Roboflow API للتعرف على مكونات الطعام من الصور.
-‏	•	Google Gemini AI لتوليد وصفات الطبخ بناءً على المكونات.
-‏	•	Hugging Face Inference API لإنشاء صور للأطباق بناءً على الوصفات.
+
+	2.	Click the Start button and log in with your username.
+	3.	Upload an image containing your food ingredients.
+	4.	The app will recognize the ingredients and display a list.
+	5.	Select the ingredients you want to use, then click Make Recipes.
+	6.	Wait for the recipes to be generated and view the suggested dish images.
+
+Technologies Used
+
+	•	Streamlit – For creating an interactive user interface.
+	•	OpenCV – For image processing.
+	•	Roboflow API – To detect food ingredients from images.
+	•	Google Gemini AI – To generate cooking recipes based on ingredients.
+	•	Hugging Face Inference API – To generate images of dishes based on recipes.
