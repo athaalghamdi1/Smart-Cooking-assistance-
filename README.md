@@ -3,9 +3,9 @@
 
 prepared by: Atha Alghamdi- Aghadir Jammah
 
-T - Smart Cooking Assistant
+ - Smart Cooking Assistant
 
-T is an interactive web application that helps users create food recipes based on the ingredients they have. The app utilizes AI to recognize ingredients from images and suggest suitable recipes, with the ability to generate images of the suggested dishes.
+Is an interactive web application that helps users create food recipes based on the ingredients they have. The app utilizes AI to recognize ingredients from images and suggest suitable recipes, with the ability to generate images of the suggested dishes.
 
 Contents
 
